@@ -1,14 +1,10 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import GithubContext from '../../context/github/GithubContext';
 import UserItem from './UserItem';
 
 function UserResults() {
-	const { users, loading, fetchUsers } = useContext(GithubContext);
-
-	useEffect(() => {
-		fetchUsers();
-	}, []);
+	const { users, loading } = useContext(GithubContext);
 
 	if (!loading) {
 		return (
