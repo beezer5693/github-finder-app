@@ -15,7 +15,9 @@ function UserResults() {
 			</div>
 		);
 	} else {
-		return <FaSpinner className='text-center mx-auto' style={{ fontSize: '3rem' }} />;
+		return (
+			<FaSpinner className='text-center mx-auto' style={{ fontSize: '3rem' }} />
+		);
 	}
 }
 
