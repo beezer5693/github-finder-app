@@ -64,9 +64,9 @@ function User() {
 							<figure>
 								<img src={avatar_url} alt='' />
 							</figure>
-							<div className='card-body justify-end'>
-								<h2 className='card-title mb-0'>{name}</h2>
-								<p>{login}</p>
+							<div className='card-body self-end gap-0 pb-4 pl-3'>
+								<h2 className='card-title my-0 text-white'>{name}</h2>
+								<p className='text-white my-0'>{login}</p>
 							</div>
 						</div>
 					</div>
